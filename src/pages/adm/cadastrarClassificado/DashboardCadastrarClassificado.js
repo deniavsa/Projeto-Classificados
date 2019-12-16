@@ -11,11 +11,40 @@ class DashboardCadastrarClassificado extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            imagem: '',
             idEquipamento: '',
-            equipamento: []
+            equipamento: [],
+            preco: '',
+            numeroDeSerie: '',
+            codigoClassificado: '',
+            fimDaVidaUtil: '',
+            dataDeFabricacao: '',
+            avaliacao: '',
+            idEquipamento: '',
         }
         this.cutUrl = this.cutUrl.bind(this)
         this.buscarClassificadoPorId = this.buscarClassificadoPorId.bind(this)
+        this.atualizaEstadoPreco = this.atualizaEstadoPreco.bind(this);
+        this.atualizaEstadoNumeroDeSerie = this.atualizaEstadoNumeroDeSerie.bind(this);
+    }
+
+    atualizaEstadoPreco(event) {
+        this.setState({ preco: event.target.value })
+    }
+    atualizaEstadoNumeroDeSerie(event) {
+        this.setState({ numeroDeSerie: event.target.value })
+    }
+    atualizaEstadoCodigoClassificado(event) {
+        this.setState({ codigoClassificado: event.target.value })
+    }
+    atualizaEstadoFimDaVidaUtil(event) {
+        this.setState({ fimDaVidaUtil: event.target.value })
+    }
+    atualizaEstadoDataDeFabricacao(event) {
+        this.setState({ dataDeFabricacao: event.target.value })
+    }
+    atualizaEstadoAvaliacao(event) {
+        this.setState({ avaliacao: event.target.value })
     }
     async componentDidMount() {
         await this.cutUrl()
@@ -137,15 +166,15 @@ class DashboardCadastrarClassificado extends Component {
                                                         <form id="inputs_classificado_01">
                                                             <div class="formatando_input">
                                                                 <label for=""><b>Preco</b></label>
-                                                                <input class="input_classificado_adm" type="text" />
+                                                                <input class="input_classificado_adm" type="text" value={this.state.preco} onChange={this.atualizaEstadoPreco} />
                                                             </div>
                                                             <div class="formatando_input">
                                                                 <label for=""><b>número de série</b></label>
-                                                                <input class="input_classificado_adm" type="text" />
+                                                                <input class="input_classificado_adm" type="text" value={this.state.numeroDeSerie} onChange={this.atualizaEstadoNumeroDeSerie} />
                                                             </div>
                                                             <div class="formatando_input">
                                                                 <label for=""><b>código</b></label>
-                                                                <input class="input_classificado_adm" type="text" />
+                                                                <input class="input_classificado_adm" type="text" value={this.state.codigoClassificado} onChange={this.atualizaEstadoCodigoClassificado} />
                                                             </div>
                                                             <div class="formatando_input">
                                                                 <label for=""><b>fim da vida util</b></label>
