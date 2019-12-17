@@ -27,7 +27,6 @@ class DashboardCadastrarClassificado extends Component {
         this.atualizaEstadoPreco = this.atualizaEstadoPreco.bind(this);
         this.atualizaEstadoNumeroDeSerie = this.atualizaEstadoNumeroDeSerie.bind(this);
     }
-
     atualizaEstadoPreco(event) {
         this.setState({ preco: event.target.value })
     }
@@ -71,10 +70,7 @@ class DashboardCadastrarClassificado extends Component {
     }
     render() {
         return (
-
             <Fragment>
-
-
                 <body style={{
                     backgroundImage: "url(" + temaDeFundo + ")",
                     backgroundRepeat: "no-repeat",

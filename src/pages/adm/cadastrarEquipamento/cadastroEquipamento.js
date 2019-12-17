@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class CadastroEquipamento extends Component {
     constructor(props) {
         super(props);
@@ -95,7 +94,7 @@ class CadastroEquipamento extends Component {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": 'Bearer ' + localStorage.getItem('autenticarlogin')
-                     },
+            },
             body: JSON.stringify({
                 nomeEquipamento: this.state.nomeEquipamento,
                 marca: this.state.marca,
@@ -110,10 +109,10 @@ class CadastroEquipamento extends Component {
                 alimentacao: this.state.alimentacao,
                 peso: this.state.peso,
                 dimensoes: this.state.dimensoes,
-                                }),
+            }),
             headers: { 'Content-type': 'application/json' }
-                                                            }
-            )
+        }
+        )
             .then(resposta => {
                 if (resposta.status === 200) {
                     console.log('Cadastro de usuário concluído com sucesso')
@@ -126,79 +125,79 @@ class CadastroEquipamento extends Component {
             <div>
                 <body>
                     <main id="conteudo_adm">
-                                    <form onSubmit={this.cadastrarEquipamento}>
-                                        <label type="text">Nome do equipamento:</label>
-                                        <input type="text"
-                                            value={this.state.nomeEquipamento}
-                                            onChange={this.atualizaEstadoNomeEquipamento}
-                                            placeholder="Nome do equipamento"
-                                        />
-                                        <label type="text">Marca:</label>
-                                        <input type="text" value={this.state.marca}
-                                            onChange={this.atualizaEstadoMarca}
-                                            name=""
-                                            id=""
-                                            placeholder="Marca"
-                                        />
-                                        <label type="text">Modelo:</label>
-                                        <input type="text"
-                                            value={this.state.modelo}
-                                            onChange={this.atualizaEstadoModelo}
-                                            placeholder="Modelo"
-                                        />
-                                        <label type="text">Sistema Operacional:</label>
-                                        <input type="text"
-                                            value={this.state.sistemaOperacional}
-                                            onChange={this.atualizaEstadoSistemaOperacional}
-                                            placeholder="Sistema Operacional"
-                                        />
-                                        <label type="text">Polegada:</label>
-                                        <input type="text" value={this.state.polegada}
-                                            onChange={this.atualizaEstadoPolegada}
-                                            placeholder="Polegada"
-                                        />
-                                        <label type="text">Processador:</label>
-                                        <input type="text" value={this.state.processador}
-                                            onChange={this.atualizaEstadoProcessador}
-                                            placeholder="Processador"
-                                        />
-                                        <label type="text">Memoria RAM:</label>
-                                        <input type="text" value={this.state.memoriaRam}
-                                            onChange={this.atualizaEstadoMemoriaRam}
-                                            placeholder="Memoria RAM"
-                                        />
-                                        <label type="text">SSD:</label>
-                                        <input type="text" value={this.state.ssd}
-                                            onChange={this.atualizaEstadoSSD}
-                                            placeholder="SSD"
-                                        />
-                                        <label type="text">HD:</label>
-                                        <input type="text" value={this.state.hd}
-                                            onChange={this.atualizaEstadoHD}
-                                            placeholder="HD"
-                                        />
-                                        <label type="text">Placa de video:</label>
-                                        <input type="text" value={this.state.placaDeVideo}
-                                            onChange={this.atualizaEstadoPlacaDeVideo}
-                                            placeholder="Placa de video"
-                                        />
-                                        <label type="text">Alimentação:</label>
-                                        <input type="text" value={this.state.alimentacao}
-                                            onChange={this.atualizaEstadoAlimentacao}
-                                            placeholder="Alimentação"
-                                        />
-                                        <label type="text">Peso:</label>
-                                        <input type="text" value={this.state.peso}
-                                            onChange={this.atualizaEstadoPeso}
-                                            placeholder="Peso"
-                                        />
-                                        <label type="text">Dimensões:</label>
-                                        <input type="text" value={this.state.dimensoes}
-                                            onChange={this.atualizaEstadoDimensoes}
-                                            placeholder="Dimensões"
-                                        />
-                                        <button type="submit" onClick="cadastrarEquipamento()">Cadastrar</button>
-                                    </form>
+                        <form onSubmit={this.cadastrarEquipamento}>
+                            <label type="text">Nome do equipamento:</label>
+                            <input type="text"
+                                value={this.state.nomeEquipamento}
+                                onChange={this.atualizaEstadoNomeEquipamento}
+                                placeholder="Nome do equipamento"
+                            />
+                            <label type="text">Marca:</label>
+                            <input type="text" value={this.state.marca}
+                                onChange={this.atualizaEstadoMarca}
+                                name=""
+                                id=""
+                                placeholder="Marca"
+                            />
+                            <label type="text">Modelo:</label>
+                            <input type="text"
+                                value={this.state.modelo}
+                                onChange={this.atualizaEstadoModelo}
+                                placeholder="Modelo"
+                            />
+                            <label type="text">Sistema Operacional:</label>
+                            <input type="text"
+                                value={this.state.sistemaOperacional}
+                                onChange={this.atualizaEstadoSistemaOperacional}
+                                placeholder="Sistema Operacional"
+                            />
+                            <label type="text">Polegada:</label>
+                            <input type="text" value={this.state.polegada}
+                                onChange={this.atualizaEstadoPolegada}
+                                placeholder="Polegada"
+                            />
+                            <label type="text">Processador:</label>
+                            <input type="text" value={this.state.processador}
+                                onChange={this.atualizaEstadoProcessador}
+                                placeholder="Processador"
+                            />
+                            <label type="text">Memoria RAM:</label>
+                            <input type="text" value={this.state.memoriaRam}
+                                onChange={this.atualizaEstadoMemoriaRam}
+                                placeholder="Memoria RAM"
+                            />
+                            <label type="text">SSD:</label>
+                            <input type="text" value={this.state.ssd}
+                                onChange={this.atualizaEstadoSSD}
+                                placeholder="SSD"
+                            />
+                            <label type="text">HD:</label>
+                            <input type="text" value={this.state.hd}
+                                onChange={this.atualizaEstadoHD}
+                                placeholder="HD"
+                            />
+                            <label type="text">Placa de video:</label>
+                            <input type="text" value={this.state.placaDeVideo}
+                                onChange={this.atualizaEstadoPlacaDeVideo}
+                                placeholder="Placa de video"
+                            />
+                            <label type="text">Alimentação:</label>
+                            <input type="text" value={this.state.alimentacao}
+                                onChange={this.atualizaEstadoAlimentacao}
+                                placeholder="Alimentação"
+                            />
+                            <label type="text">Peso:</label>
+                            <input type="text" value={this.state.peso}
+                                onChange={this.atualizaEstadoPeso}
+                                placeholder="Peso"
+                            />
+                            <label type="text">Dimensões:</label>
+                            <input type="text" value={this.state.dimensoes}
+                                onChange={this.atualizaEstadoDimensoes}
+                                placeholder="Dimensões"
+                            />
+                            <button type="submit" onClick="cadastrarEquipamento()">Cadastrar</button>
+                        </form>
                     </main>
                 </body>
             </div>

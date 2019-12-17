@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './PaginaDoProduto.css'
 import prdtt from '../../assets/img/macbook.png'
 
-
-
 class PaginaDoProduto extends Component {
     constructor(props) {
         super(props)
@@ -14,7 +12,6 @@ class PaginaDoProduto extends Component {
         this.removerIdDaUrl = this.removerIdDaUrl.bind(this)
         this.buscarClassificadoPorId = this.buscarClassificadoPorId.bind(this)
     }
-
     async componentDidMount() {
         await this.removerIdDaUrl()
         this.buscarClassificadoPorId()
@@ -53,7 +50,6 @@ class PaginaDoProduto extends Component {
             .then(resposta => resposta.json())
             .then(data => {
                 this.setState({ classificado: data })
-
                 this.setState({ nomeEquipamento: data.idEquipamentoNavigation.nomeEquipamento })
                 this.setState({ marca: data.idEquipamentoNavigation.marca })
                 this.setState({ modelo: data.idEquipamentoNavigation.modelo })
@@ -72,8 +68,6 @@ class PaginaDoProduto extends Component {
             }
             ).catch((erro) => console.log(erro))
     }
-
-
     render() {
         return (
             <body>
@@ -208,8 +202,6 @@ class PaginaDoProduto extends Component {
                     </section>
                 </main>
             </body>
-
-
         )
     }
 }
