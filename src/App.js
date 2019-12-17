@@ -97,8 +97,8 @@ class App extends Component {
                                     {Classificado.preco}<br />
                                   </div>
                                 </div>
-                              </div>z
-                                        <div className="home-cards-configuracao-carrinhos">
+                              </div>
+                              <div className="home-cards-configuracao-carrinhos">
                                 <div className="home-produto-interesse-notebook">
                                   <div className="home-carrinhos-box">
                                     <i className="fas fa-shopping-cart"></i>

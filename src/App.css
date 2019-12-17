@@ -116,6 +116,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 .home-cards-separacao-notebooks{ 
   width: 405.5px;
