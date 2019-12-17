@@ -10,6 +10,9 @@
     height:15vh;
     /* background: #005DFF; */
 }
+.Produto_corpo{
+    margin-bottom:90px;
+}
 
 .rodape{
     width: 100%;
@@ -256,24 +259,24 @@ body{
 /* Começo ==============produto_conteudo==========*/
 .conteudo{
     width: 100%;
-    height: 200vh;
+    height: 230vh;
 }
-.produto_conteudo{
+.produto_conteudo {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background: #EAEAEA;
     /* padding: 4vw 0 0 0; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.produto_conteudo_center{
+.produto_conteudo_center {
     width: 85%;
     height: 60vh;
-    margin: 0vw auto 0 auto;
+    margin: 13vw auto 0 auto;
     display: flex;
     background: #FFFFFF;
-    box-shadow: 2px 6px 70px -3px rgba(0,0,0,0.36);
+    box-shadow: 1px 6px 56px -7px rgba(0,0,0,0.36);
     border-radius: 0.8rem;
 }
 .box1{
@@ -285,11 +288,10 @@ body{
     display: flex;
     
 }
-.box1 img{
-    width: 18vw;
-    height: 22vh;
-    margin: 11vh 4vw 1vh 12vw;
-    /* margin: auto;
+.box1 img {
+    width: 301px;
+    height: 317px;
+    margin: 11vh 5vw 1vh 11vw;
 }
 .box2{
     width: 50vw;
@@ -297,8 +299,8 @@ body{
     /* border-left-style: solid;
     border-left-width:0.1rem; */
 }
-.box2_cap{
-    padding: 12vh 3.5vw 3.5vh 3.5vw;
+.box2_cap {
+    padding: 20vh 7.5vw 3.5vh 3.5vw;
 }
 .box2_cap_titulo{
     margin-bottom: 0.1rem;
@@ -394,11 +396,11 @@ body{
 /*///////////////////RESPONSIVO TABLET///////////////////*/
 /*///////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 767px) and (min-width: 425px){
+@media screen and (max-width: 769px) and (min-width: 425px){
      
     .conteudo {
         width: 100%;
-        height: 254vh;
+        height: 234vh;
     }
     .cabecalho{
         width:100%;
@@ -425,7 +427,7 @@ body{
 
     .produto_desc_info {
         width: 100%;
-        height: 98vh;
+        height: 37vh;
         display: flex;
         justify-content: center;
         /* margin-bottom: 36vh; */
@@ -452,10 +454,10 @@ body{
         padding: 0vh 3.5vw 3.5vh 3.5vw;
         width: 86vw;
     }
-    .box1 img {
-        width: 36vw;
-        height: 20vh;
-        margin: 6vh 1vw 1vh 25vw;
+    .produto_conteudo_center .box1 img {
+        width: 301px;
+        height: 317px;
+        margin: 7vh 5vw 1vh 11vw;
     }
     .box1 ul {
         text-decoration: none;
@@ -522,7 +524,7 @@ body{
 
     .produto_desc_info {
         width: 100%;
-        height: 98vh;
+        height: 39vh;
         display: flex;
         justify-content: center;
         /* margin-bottom: 36vh; */
@@ -548,10 +550,10 @@ body{
         padding: 0vh 3.5vw 3.5vh 3.5vw;
         width: 86vw;
     }
-    .box1 img {
-        width: 36vw;
-        height: 20vh;
-        margin: 6vh 1vw 1vh 25vw;
+    .produto_conteudo_center .box1 img {
+        width: 224px;
+        height: 274px;
+        margin: 11vh 4vw 1vh 9vw;
     }
     .box1 ul {
         text-decoration: none;

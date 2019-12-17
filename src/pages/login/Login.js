@@ -45,7 +45,6 @@ class Login extends Component {
   render() {
     return (
       <div>
-
         <body>
           <section>
             <form onSubmit={this.efetuaLogin.bind(this)}>

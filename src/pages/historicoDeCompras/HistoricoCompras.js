@@ -10,7 +10,7 @@ class HistoricoCompras extends Component {
             <div>
                 <body>
                     <Cabecalho />
-                    <main>
+                    <main className="counteudo_compras">
                         <sec id="posicao-1-ord-sec-comp">
                             <div id="posicao-2-ord-div-comp">
                                 <table id="posicao-3-ord-tab-comp" style={{ width: "100%", height: "7rem" }}>

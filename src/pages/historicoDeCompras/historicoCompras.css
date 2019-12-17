@@ -176,6 +176,10 @@ font-size: 1em;
         display: flex;
         align-items: center
     }
+    .counteudo_compras{
+        width:100%;
+        height: 83vh;
+    }
 
       
     .posicao-5-ord-par-comp{

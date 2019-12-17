@@ -18,7 +18,7 @@ body{
 /* img src={} */
 /* INICIO DA ESTILIZAÇÃO DO BANNER IMAGEM HOME  */
 .banner-home {
-  height: 82vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,8 +32,8 @@ body{
 
 
 /* INICIO DA ESTILIZAÇÃO DA PARTE DE SELEÇÃO DE OPÇÕES */
-.home_filtro{
-  height: 25vh;
+.home_filtro {
+  height: 30vh;
   display: flex;
   justify-content: center;
   padding-top: 3em;

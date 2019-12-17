@@ -23,11 +23,11 @@ body{
     height: 200px;
     /* border: solid 1px black; */
 }
-.conteudo{
+/* .conteudo{
     width: 100%;
     height: 602.5px;
     border: solid 1px black;
-}
+} */
 .rodape {
     width: 100%;
     height: 166px;
@@ -37,6 +37,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .rodape_structure {
     width: 100%;
