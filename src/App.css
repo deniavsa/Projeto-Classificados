@@ -216,9 +216,42 @@ body{
 }
 /* FIM DA ESTILIZAÇÃO DA PÁGINA HOME PRODUTOS */
 
+/*/////////////////////////////////// */
+/*//////////////INDEFINIDO////////////// */
+/*////////////////////////////////// */
+
+/* @media screen and (max-width: 1439px) and (min-width: 1024px){
+  .home-cards-separacao-notebooks {
+    width: 36vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_produto_desk_box_box_card {
+  width: 28vw;
+  height: 27vh;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px #E0E0E0, 0px 0px 7px #E0E0E0;
+}
+.home_produto_desk_box_box_card_bottom {
+  width: 33vw;
+  height: 12vh;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #F5F5F5;
+}
+.home-carrinhos-cards {
+  width: 31vw;
+  height: 49px;
+  display: flex;
+}
+
+} */
 
 
-@media screen and (max-width: 1024px) and (min-width: 768px){
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
   .home-cards-separacao-notebooks {
     width: 377.5px;
     height: 377px;
@@ -276,7 +309,7 @@ body{
   width: 93vw;
 }
 .home-cards-separacao-notebooks {
-  width: 347.5px;
+  width: 92vw;
   height: 377px;
   display: flex;
   justify-content: center;
@@ -300,10 +333,15 @@ body{
   align-items: center;
 }
 .home_produto_desk_box_box_card_bottom {
-  width: 300px;
+  width: 90vw;
   height: 119px;
   border-radius: 0px 0px 5px 5px;
   background-color: #F5F5F5;
+}
+.home-produto-interesse-notebook {
+  margin-top: 5px;
+  width: 0vw;
+  height: 68.4px;
 }
 .home-descricao-notebooks {
   width: 217px;
