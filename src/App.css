@@ -15,6 +15,10 @@ body{
 }
 /* FIM DAS CONFIGURAÇÕES GERAIS DA PÁGINA */
 
+/*/////////////////////////////////// */
+/*//////////////DESKTOP////////////// */
+/*////////////////////////////////// */
+
 /* img src={} */
 /* INICIO DA ESTILIZAÇÃO DO BANNER IMAGEM HOME  */
 .banner-home {
@@ -33,22 +37,23 @@ body{
 
 /* INICIO DA ESTILIZAÇÃO DA PARTE DE SELEÇÃO DE OPÇÕES */
 .home_filtro {
-  height: 30vh;
+  height: 16vh;
   display: flex;
   justify-content: center;
-  padding-top: 3em;
+  /* padding-top: 3em; */
 }
-.home_filtro_box_bottom_box1_box{
+.home_filtro_box_bottom_box1_box {
   width: 75vw;
   height: 15vh;
   border: none 2em solid;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0;
+  /* border-radius: 10px; */
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0; */
   display: flex;
   background-color: #E0E0E0;
   justify-content: center;
   align-items: center;
-  
 }
 .home_filtro_box_bottom_box1_box_1{
   width: 300vw;
@@ -211,3 +216,351 @@ body{
 }
 /* FIM DA ESTILIZAÇÃO DA PÁGINA HOME PRODUTOS */
 
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .home-cards-separacao-notebooks {
+    width: 377.5px;
+    height: 377px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+/*/////////////////////////////////// */
+/*//////////////TABLET////////////// */
+/*////////////////////////////////// */
+
+@media screen and (max-width: 767px) and (min-width: 425px){
+  .conteudo_home {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_filtro {
+  height: 29vh;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 0.2rem; */
+  width: 100vw;
+}
+.home-notebook-apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 265px;
+}
+.home_filtro_box_bottom_box1_box {
+  width: 100vw;
+  height: 29vh;
+  border: none 2em solid;
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0; */
+  display: flex;
+  background-color: #E0E0E0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home_filtro_box_bottom_box1_box_1 {
+  width: 68vw;
+  height: 118vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.barra-serapacao-filtro {
+  border-bottom: 1px solid rgb(158, 158, 158);
+  height: 11vh;
+  width: 93vw;
+}
+.home-cards-separacao-notebooks {
+  width: 347.5px;
+  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-inicio-apresentacao {
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0vw;
+}
+.home_produto_desk_box_box_card {
+  cursor: pointer;
+  width: 89vw;
+}
+.home-guardar-notebooks {
+  width: 80vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_produto_desk_box_box_card_bottom {
+  width: 300px;
+  height: 119px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #F5F5F5;
+}
+.home-descricao-notebooks {
+  width: 217px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-notebook-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 200px;
+}
+.home-guardar-notebooks img {
+  height: 222px;
+  width: 215px;
+}
+.home-carrinhos-cards {
+  width: 281px;
+  height: 49px;
+  display: flex;
+}
+.paragrafo-filtro-home {
+  padding-left: 1em;
+  font-size: 1.3em;
+}
+
+}
+
+/*/////////////////////////////////////////// */
+/*//////////////MOBILE PARTE 2////////////// */
+/*///////////////////////////////////////// */
+
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+  .conteudo_home {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_filtro {
+  height: 29vh;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 0.2rem; */
+  width: 100vw;
+}
+.home-notebook-apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 265px;
+}
+.home-produto-interesse-notebook {
+  margin-top: 5px;
+  width: 0vw;
+  height: 68.4px;
+}
+.home_filtro_box_bottom_box1_box {
+  width: 100vw;
+  height: 29vh;
+  border: none 2em solid;
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0; */
+  display: flex;
+  background-color: #E0E0E0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home_filtro_box_bottom_box1_box_1 {
+  width: 68vw;
+  height: 118vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.barra-serapacao-filtro {
+  border-bottom: 1px solid rgb(158, 158, 158);
+  height: 11vh;
+  width: 93vw;
+}
+.home-cards-separacao-notebooks {
+  width: 347.5px;
+  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-inicio-apresentacao {
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0vw;
+}
+.home_produto_desk_box_box_card {
+  cursor: pointer;
+  width: 95vw;
+}
+.home-guardar-notebooks {
+  width: 80vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_produto_desk_box_box_card_bottom {
+  width: 93vw;
+  height: 12vh;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #F5F5F5;
+}
+.home-descricao-notebooks {
+  width: 217px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-notebook-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 200px;
+}
+.home-guardar-notebooks img {
+  height: 222px;
+  width: 215px;
+}
+.home-carrinhos-cards {
+  width: 281px;
+  height: 49px;
+  display: flex;
+}
+.paragrafo-filtro-home {
+  padding-left: 1em;
+  font-size: 1.3em;
+}
+}
+
+/*/////////////////////////////////////////// */
+/*//////////////MOBILE PARTE 1////////////// */
+/*///////////////////////////////////////// */
+
+@media screen and (max-width: 374px) and (min-width: 319px) {
+  .conteudo_home {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_filtro {
+  height: 29vh;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 0.2rem; */
+  width: 100vw;
+}
+.home-notebook-apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 265px;
+}
+.home_filtro_box_bottom_box1_box {
+  width: 100vw;
+  height: 29vh;
+  border: none 2em solid;
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 10px #E0E0E0, 0px 0px 10px #E0E0E0; */
+  display: flex;
+  background-color: #E0E0E0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home_filtro_box_bottom_box1_box_1 {
+  width: 68vw;
+  height: 118vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.barra-serapacao-filtro {
+  border-bottom: 1px solid rgb(158, 158, 158);
+  height: 11vh;
+  width: 93vw;
+}
+.home-cards-separacao-notebooks {
+  width: 347.5px;
+  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-inicio-apresentacao {
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0vw;
+}
+.home_produto_desk_box_box_card{
+    cursor: pointer;
+    width: 300px;
+}
+.home-guardar-notebooks {
+  width: 80vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.home-guardar-notebooks img {
+  height: 222px;
+  width: 215px;
+  margin: auto;
+}
+.home_produto_desk_box_box_card_bottom {
+  width: 300px;
+  height: 119px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #F5F5F5;
+}
+.home-descricao-notebooks {
+  width: 217px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-notebook-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 200px;
+}
+
+.home-carrinhos-cards {
+  width: 281px;
+  height: 49px;
+  display: flex;
+}
+.paragrafo-filtro-home {
+  padding-left: 1em;
+  font-size: 1.3em;
+}
+/* img {
+    width: 4.5em;
+} */
+
+}

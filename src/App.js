@@ -76,8 +76,7 @@ class App extends Component {
               </div>
             </div>
           </section>
-
-          <main>
+          <main className="conteudo_home">
             <section className="home-inicio-apresentacao">
               <div className="home-notebook-apresentacao">
                 <div className="home-notebook-box">
