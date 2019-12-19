@@ -5,6 +5,10 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import { usuarioAutenticado, parseJwt } from './services/auth';
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
 // páginas 
 import cadastro from './pages/cadastro/Cadastro';
 import cadastroConcluido from './pages/cadastroConfirmado/ConfirmacaoCadastro';
